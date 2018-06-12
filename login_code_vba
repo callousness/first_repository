@@ -1,0 +1,13 @@
+Private Sub btnLogin_Click()
+    Dim strCBOPass As String
+    Dim strPassword As String
+    
+    strCBOPass = Me.cboUsername.Column(1)
+    strPassword = Me.txtPassword
+    
+    If strCBOPass = strPassword Then
+        MsgBox "Login Successful!"
+    Else
+        MsgBox "Login Unsuccessful!"
+    End If
+End Sub
